@@ -1,10 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .nav-container {
-  position: fixed;
-  width: 100vw;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   border: solid 1px black;
+}
+
+.nav-container h1,
+h2 {
+  margin: 3vw;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-list li {
+  font-size: 8vw;
+  margin: 2vw;
+  cursor: pointer;
+  transform: translate(-6vw);
+
+  color: purple;
+}
+
+.about-container {
+  position: relative;
+  display: flex;
+  padding: 2vw;
+  transition: 0.6s ease-in;
+
+  border: solid 1px black;
+}
+
+.about-container:hover {
+  background: #000;
+  color: #fff;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+
+  border: solid 1px black;
+}
+
+.projects-header {
+  display: flex;
+  justify-content: center;
+  background: rgb(148, 148, 236);
+  color: #fff;
+}
+
+.project-box {
+  display: flex;
+  width: 100%;
+  height: 35vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  align-items: flex-end;
+
+  border: solid 1px black;
+}
+
+.project-box div {
+  height: 8vh;
+  width: 100%;
+  background: black;
+  color: white;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.title-hidden {
+  opacity: 0;
+  transform: translateY(8vh);
+}
+
+.title-shown {
+  opacity: 1;
+  transform: translateY(-8vh);
+}
+
+#project-box-1 {
+  background-image: url("https://i.imgur.com/FyGCClS.png");
+}
+#project-box-2 {
+  background-image: url("https://i.imgur.com/FlWcltw.png");
+}
+#project-box-3 {
+  background-image: url("https://i.imgur.com/BbZJX4h.png");
+}
+#project-box-4 {
+  background-image: url("https://i.imgur.com/UfpjhHg.png");
+}
+#project-box-5 {
+  background-image: url("https://i.imgur.com/btqDo6Q.png");
+}
+#project-box-6 {
+  background-image: url("https://i.imgur.com/WDPfNiR.png");
+}
+#project-box-7 {
+  background-image: url("https://i.imgur.com/2n7yAZf.png");
+}
+#project-box-8 {
+  background-image: url("https://i.imgur.com/IfMs8DT.png");
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.footer-img {
+  width: 50%;
+}
+
+.footer-img img {
+  width: 50%;
+}
+
+.footer-text h4 {
+  font-size: 4vw;
+}
+
+.footer-text p {
+  font-size: 3vw;
 }
