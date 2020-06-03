@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGitSquare, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { FaGithubSquare, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 export default function Nav() {
   return (
@@ -9,7 +9,7 @@ export default function Nav() {
       <ul className="nav-list">
         <a>
           <li id="git-square">
-            <FaGitSquare />
+            <FaGithubSquare />
           </li>
         </a>
         <a>

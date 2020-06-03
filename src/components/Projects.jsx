@@ -1,5 +1,6 @@
 import React from "react";
 import ProjectBox from "./ProjectBox";
+import { FaChevronDown } from "react-icons/fa";
 
 const projects = [
   {
@@ -41,6 +42,11 @@ export default function Projects() {
     <div className="projects-container">
       <div className="projects-header">
         <h3>Projects</h3>
+        <a href="#project-box-1">
+          <button id="chevron">
+            <FaChevronDown />
+          </button>
+        </a>
       </div>
       <div className="projects">
         {projects.map(({ name, link }) => {
