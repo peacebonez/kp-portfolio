@@ -6,34 +6,32 @@ const projects = [
   {
     name: "E-Commerce",
     link: "https://black-market-market.netlify.app/",
+    gitLink: "https://github.com/peacebonez/eccommerce-black-market",
   },
   {
     name: "Vaporwave Memory Game",
     link: "https://memory-card-game-with-hooks.netlify.app/",
+    gitLink: "https://github.com/peacebonez/memory-app-with-hooks",
   },
   {
     name: "Recipe Finder",
     link: "https://food-finder-app.netlify.app/",
+    github: "https://github.com/peacebonez/recipe-app",
   },
   {
     name: "Drum Machine",
     link: "https://fcc-drum-machine-react.netlify.app/",
+    gitLink: "https://github.com/peacebonez/FCC-drum-machine",
   },
   {
     name: "Virtual Library",
     link: "https://virtual-library.netlify.app/",
+    gitLink: "https://github.com/peacebonez/library-app",
   },
   {
     name: "Kpop or Final Fantasy?",
     link: "https://kpopvsfinalfantasy.netlify.app/",
-  },
-  {
-    name: "Calculator",
-    link: "https://fcc-calculator-react.netlify.app/",
-  },
-  {
-    name: "Conway's Game of Life",
-    link: "https://game-of-life-with-hooks.netlify.app/",
+    gitLink: "https://github.com/peacebonez/-Kpop-Vs-Final-Fantasy-Game",
   },
 ];
 let id = 0;
@@ -49,9 +47,11 @@ export default function Projects() {
         </a>
       </div>
       <div className="projects">
-        {projects.map(({ name, link }) => {
+        {projects.map(({ name, link, gitLink }) => {
           id++;
-          return <ProjectBox id={id} name={name} link={link} />;
+          return (
+            <ProjectBox id={id} name={name} link={link} gitLink={gitLink} />
+          );
         })}
       </div>
     </div>

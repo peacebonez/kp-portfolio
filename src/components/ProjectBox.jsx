@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaGithubSquare } from "react-icons/fa";
 
-export default function ProjectBox({ name, link, id }) {
+export default function ProjectBox({ name, link, gitLink, id }) {
   const [isShown, setIsShown] = useState(false);
   const showTitle = () => {
     setIsShown(true);
@@ -9,7 +9,7 @@ export default function ProjectBox({ name, link, id }) {
   const hideTitle = () => {
     setIsShown(false);
   };
-  console.log("isShown:", isShown);
+  console.log(gitLink);
   return (
     <a
       href={link}
@@ -23,7 +23,12 @@ export default function ProjectBox({ name, link, id }) {
       >
         <div className={isShown ? "title-shown" : "title-hidden"}>
           <p>{name}</p>
-          <a href={link}>
+          <a
+            href={gitLink}
+            target="_blank"
+            className="git-link"
+            onClick={(e) => e.stopPropagation()}
+          >
             <FaGithubSquare />
           </a>
         </div>
