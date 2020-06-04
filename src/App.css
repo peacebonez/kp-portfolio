@@ -89,7 +89,7 @@ h2 {
 }
 
 .tech-icon {
-  font-size: 14vw;
+  font-size: 16vw;
   margin: 3vw;
   transition: all 0.4s ease-out;
 }
@@ -110,7 +110,7 @@ h2 {
 }
 
 #resume-btn {
-  font-size: 4vw;
+  font-size: 6vw;
   font-weight: 700;
   padding: 2vw 4vw;
   color: white;
@@ -128,6 +128,7 @@ h2 {
   flex-direction: column;
   align-items: center;
   background: #fff;
+  background: #fffeef;
 }
 
 .projects-header {
@@ -161,7 +162,7 @@ h2 {
 .project-box {
   display: flex;
   width: 90vw;
-  height: 45vh;
+  height: 50vh;
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
@@ -208,33 +209,6 @@ h2 {
   opacity: 1;
 }
 
-#project-box-1 {
-  /* background-image: url("https://i.imgur.com/FyGCClS.png"); */
-  background-image: url("https://i.imgur.com/odp6Ga8.jpg");
-}
-#project-box-2 {
-  /* background-image: url("https://i.imgur.com/FlWcltw.png"); */
-  background-image: url("https://i.imgur.com/DQ72IyF.jpg");
-}
-#project-box-3 {
-  background-image: url("https://i.imgur.com/BbZJX4h.png");
-}
-#project-box-4 {
-  background-image: url("https://i.imgur.com/UfpjhHg.png");
-}
-#project-box-5 {
-  background-image: url("https://i.imgur.com/btqDo6Q.png");
-}
-#project-box-6 {
-  background-image: url("https://i.imgur.com/WDPfNiR.png");
-}
-#project-box-7 {
-  background-image: url("https://i.imgur.com/2n7yAZf.png");
-}
-#project-box-8 {
-  background-image: url("https://i.imgur.com/IfMs8DT.png");
-}
-
 .footer {
   display: flex;
   justify-content: flex-start;
@@ -276,6 +250,44 @@ h2 {
   color: #444;
 }
 
-.balls {
-  transform: translate(-3vw, 3vh);
+@media only screen and (min-width: 1000px) {
+  .nav-container {
+    height: 15vh;
+  }
+
+  .nav-container h1 {
+    font-size: 2vw;
+  }
+
+  .nav-container h2 {
+    font-size: 1.5vw;
+  }
+
+  .nav-list li {
+    font-size: 5vw;
+  }
 }
+
+@media only screen and (min-width: 1250px) {
+  .nav-container h1 {
+    font-size: 2vw;
+  }
+
+  .nav-container h2 {
+    font-size: 1.5vw;
+  }
+
+  .nav-list li {
+    font-size: 3vw;
+  }
+}
+
+/* @media only screen and (min-width: 1000px) {
+  .nav-container h1 {
+    font-size: 2vw;
+  }
+
+  .nav-container h2 {
+    font-size: 1.5vw;
+  }
+} */
