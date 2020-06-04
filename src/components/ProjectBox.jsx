@@ -19,32 +19,34 @@ export default function ProjectBox({
   };
   // < 425 use mobile images
   return (
-    <a
-      href={link}
-      target="_blank"
-      onMouseOver={showTitle}
-      onMouseOut={hideTitle}
-    >
-      <div
-        id={`project-box-${id}`}
-        className={isShown ? "project-box box-hover" : "project-box"}
-        style={{
-          backgroundImage: `url(${width < 400 ? smallImg : largeImg})`,
-          backgroundPosition: name === "Drum Machine" ? "center" : "top",
-        }}
+    <div>
+      <a
+        href={link}
+        target="_blank"
+        onMouseOver={showTitle}
+        onMouseOut={hideTitle}
       >
-        <div className={isShown ? "title-shown" : "title-hidden"}>
-          <p>{name}</p>
-          <a
-            href={gitLink}
-            target="_blank"
-            className="git-link"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <FaGithubSquare />
-          </a>
+        <div
+          id={`project-box-${id}`}
+          className={isShown ? "project-box box-hover" : "project-box"}
+          style={{
+            backgroundImage: `url(${width < 400 ? smallImg : largeImg})`,
+            backgroundPosition: name === "Drum Machine" ? "center" : "top",
+          }}
+        >
+          <div className={isShown ? "title-shown" : "title-hidden"}>
+            <p>{name}</p>
+            <a
+              href={gitLink}
+              target="_blank"
+              className="git-link"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <FaGithubSquare />
+            </a>
+          </div>
         </div>
-      </div>
-    </a>
+      </a>
+    </div>
   );
 }

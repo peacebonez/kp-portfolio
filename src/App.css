@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: "Raleway", sans-serif;
   font-weight: 200;
+  /* overflow-x: hidden; */
 }
 
 html {
@@ -28,8 +29,9 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background: #fff;
 
-  /* border: solid 1px black; */
+  border-bottom: solid 1px #aaa;
 }
 
 .nav-container h1,
@@ -72,6 +74,7 @@ h2 {
   align-items: center;
   padding: 2vw 0 9vh 0;
   background: #fef225;
+  background: #fff;
   transition: 0.6s ease-in;
 }
 .about-container h3 {
@@ -107,28 +110,27 @@ h2 {
   align-items: center;
   justify-content: center;
   margin-top: 3vh;
+  margin-bottom: -3vh;
 }
 
 #resume-btn {
   font-size: 6vw;
   font-weight: 700;
-  padding: 2vw 4vw;
-  color: white;
-  background: #000;
+  padding: 2vw 7vw;
+  color: #000;
+  background: #fff;
   outline: none;
-  border: none;
+  border: 2px solid #000;
   cursor: pointer;
   font-family: "Architects Daughter", cursive;
 
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 .projects-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #fff;
-  background: #fffeef;
 }
 
 .projects-header {
@@ -142,7 +144,7 @@ h2 {
 }
 
 .projects-header h3 {
-  margin: 2vw;
+  margin: 4vw;
   font-size: 5vw;
   font-weight: 700;
 }
@@ -168,9 +170,9 @@ h2 {
   background-size: cover;
   align-items: flex-end;
   transition: all 0.5s;
-  margin: 2vh 0;
+  margin: 4vh 0;
 
-  border: solid 1px #aaa;
+  border-radius: 15px;
 }
 
 .box-hover {
@@ -189,6 +191,12 @@ h2 {
   color: #333;
   text-align: center;
   transition: all 0.3s;
+
+  border-radius: 0 0 15px 15px;
+}
+
+.project-box p {
+  font-weight: 700;
 }
 
 .git-link {
@@ -206,28 +214,26 @@ h2 {
 }
 
 .title-shown {
-  opacity: 1;
+  opacity: 0.9;
 }
 
 .footer {
   display: flex;
   justify-content: flex-start;
-  background: linear-gradient(
-    to left,
-    rgba(224, 69, 255, 0.596),
-    rgba(226, 28, 210, 0.596)
-  );
+  background: #fff;
   align-items: center;
+  border-top: 1px solid #aaa;
 }
 
 .footer-block {
   background: #333;
-  /* height: 1vh; */
+
   width: 100%;
 }
 
 .footer-img {
-  width: 50%;
+  width: 40%;
+  text-align: center;
 }
 
 .footer-img img {
@@ -237,17 +243,18 @@ h2 {
 
 .footer-text {
   border-left: solid 1px #aaa;
-  /* height: 8vh; */
 }
 
 .footer-text h4 {
   font-size: 4vw;
+  color: #000;
+  text-decoration: underline;
 }
 
 .footer-text p {
   margin-top: -3vw;
   font-size: 3vw;
-  color: #444;
+  color: #000;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -282,12 +289,32 @@ h2 {
   }
 }
 
-/* @media only screen and (min-width: 1000px) {
-  .nav-container h1 {
-    font-size: 2vw;
+@media only screen and (min-width: 800px) {
+  .projects-header {
+    justify-content: flex-start;
+    height: 30vh;
   }
 
-  .nav-container h2 {
-    font-size: 1.5vw;
+  .projects {
+    display: flex;
+    justify-content: center;
+    transform: translateY(-10vh);
+    flex-wrap: wrap;
   }
-} */
+
+  .project-box {
+    width: 20vw;
+    height: 50vh;
+    border-radius: 0;
+    margin: 3vw;
+  }
+
+  .project-box div {
+    border-radius: 0;
+  }
+
+  .git-link {
+    font-size: 2vw;
+    margin-left: 2vw;
+  }
+}

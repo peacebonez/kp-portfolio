@@ -33,7 +33,7 @@ export default function About() {
       </div>
       <div id="resume-container">
         <a href="">
-          <button id="resume-btn">Resume</button>
+          <button id="resume-btn">Resumé</button>
         </a>
       </div>
     </div>
