@@ -1,5 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Raleway:wght@300;400;700&display=swap");
+
 * {
   box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  font-weight: 200;
 }
 
 html {
@@ -22,15 +26,26 @@ a {
 .nav-container {
   width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: space-between;
 
   /* border: solid 1px black; */
 }
 
 .nav-container h1,
 h2 {
-  margin: 3vw;
+  text-align: center;
+  margin-left: 3vw;
+  text-shadow: 0.4px 0.4px white;
+}
+
+.nav-container h1 {
+  font-size: 4vw;
+  font-family: "Architects Daughter", cursive;
+}
+.nav-container h2 {
+  font-size: 3vw;
+  font-weight: 200;
 }
 
 .nav-list {
@@ -40,18 +55,21 @@ h2 {
 }
 
 .nav-list li {
-  font-size: 8vw;
-  margin: 2vw;
+  font-size: 7vw;
+  margin: 1vw;
   cursor: pointer;
   transform: translate(-6vw);
+}
 
-  color: purple;
+.nav-list li:hover {
+  color: #a822fd;
 }
 
 .about-container {
   position: relative;
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding: 2vw 0 9vh 0;
   background: #fef225;
   transition: 0.6s ease-in;
@@ -68,25 +86,52 @@ h2 {
   align-self: flex-end;
   align-items: center;
   margin: 10vw 10vw 0 0;
-
-  /* border: solid 1px black; */
 }
 
 .tech-icon {
   font-size: 14vw;
   margin: 3vw;
+  transition: all 0.4s ease-out;
+}
+
+.tech-icon:hover {
+  transform: scale(0.85);
 }
 
 .about-container:hover {
   text-shadow: 1px 2px white;
 }
 
+#resume-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3vh;
+}
+
+#resume-btn {
+  font-size: 4vw;
+  font-weight: 700;
+  padding: 2vw 4vw;
+  color: white;
+  background: #000;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-family: "Architects Daughter", cursive;
+
+  border-radius: 10px;
+}
+
 .projects-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  background: #fff;
 }
 
 .projects-header {
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -97,6 +142,8 @@ h2 {
 
 .projects-header h3 {
   margin: 2vw;
+  font-size: 5vw;
+  font-weight: 700;
 }
 
 #chevron {
@@ -108,18 +155,21 @@ h2 {
   margin: 0;
   padding: 0;
   font-size: 4vw;
-  color: #eee;
+  color: #fff;
 }
 
 .project-box {
   display: flex;
-  width: 100%;
-  height: 35vh;
+  width: 90vw;
+  height: 45vh;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   background-size: cover;
   align-items: flex-end;
   transition: all 0.5s;
+  margin: 2vh 0;
+
+  border: solid 1px #aaa;
 }
 
 .box-hover {
@@ -159,10 +209,12 @@ h2 {
 }
 
 #project-box-1 {
-  background-image: url("https://i.imgur.com/FyGCClS.png");
+  /* background-image: url("https://i.imgur.com/FyGCClS.png"); */
+  background-image: url("https://i.imgur.com/odp6Ga8.jpg");
 }
 #project-box-2 {
-  background-image: url("https://i.imgur.com/FlWcltw.png");
+  /* background-image: url("https://i.imgur.com/FlWcltw.png"); */
+  background-image: url("https://i.imgur.com/DQ72IyF.jpg");
 }
 #project-box-3 {
   background-image: url("https://i.imgur.com/BbZJX4h.png");
@@ -186,13 +238,17 @@ h2 {
 .footer {
   display: flex;
   justify-content: flex-start;
-  background: #fef225;
+  background: linear-gradient(
+    to left,
+    rgba(224, 69, 255, 0.596),
+    rgba(226, 28, 210, 0.596)
+  );
   align-items: center;
 }
 
 .footer-block {
   background: #333;
-  height: 4vh;
+  /* height: 1vh; */
   width: 100%;
 }
 
