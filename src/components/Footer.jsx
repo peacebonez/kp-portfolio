@@ -1,13 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
+import { FaArrowUp } from "react-icons/fa";
+
 export default function Footer() {
+  const [isHover, setIsHover] = useState(false);
+  const toTop = () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  };
+
+  const handleMouseOver = () => {
+    setIsHover(true);
+  };
+  const handleMouseOut = () => {
+    setIsHover(false);
+  };
   return (
     <>
+      <hr id="footer-hr"></hr>
       <div className="footer-block"></div>
       <div className="footer">
-        <div className="footer-img">
+        <div
+          className="footer-img"
+          onClick={toTop}
+          onMouseOver={handleMouseOver}
+          onMouseOut={handleMouseOut}
+        >
+          <FaArrowUp id="fa-up" style={{ opacity: isHover ? 1 : 0 }} />
           <img
             src="https://i.imgur.com/QYhFtG9.jpg?1"
             alt="Author standing on a rooftop in Singapore"
+            style={{ opacity: isHover ? 0.5 : 1 }}
           ></img>
         </div>
         <div className="footer-text">

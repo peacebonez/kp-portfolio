@@ -47,7 +47,7 @@ const projects = [
   },
 ];
 let id = 0;
-export default function Projects({ width }) {
+export default function Projects() {
   return (
     <div className="projects-container">
       <div className="projects-header">
@@ -64,7 +64,6 @@ export default function Projects({ width }) {
           return (
             <ProjectBox
               key={id}
-              width={width}
               id={id}
               name={name}
               link={link}
