@@ -2,6 +2,18 @@ import React, { useState, useEffect, useRef } from "react";
 import { FaGithubSquare, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 export default function Nav() {
+  useEffect(() => {
+    let prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+      let currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.querySelector(".nav-container").style.top = 0;
+      } else {
+        document.querySelector(".nav-container").style.top = "-145px";
+      }
+      prevScrollpos = currentScrollPos;
+    };
+  });
   return (
     <div className="nav-container">
       <div>

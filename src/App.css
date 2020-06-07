@@ -36,6 +36,7 @@ a {
   background: #fff;
   position: fixed;
   z-index: 3;
+  transition: top 0.3s;
 }
 
 .nav-container h1,
@@ -358,6 +359,10 @@ h2 {
 /* VERTICAL MEDIA QUERIES */
 
 @media only screen and (min-width: 320px) {
+  .about-container h3 {
+    margin-top: 7vh;
+    padding: 2vw;
+  }
   #fa-up {
     font-size: 6.5vw;
     transform: translate(100%, 100%);
