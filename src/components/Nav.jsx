@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { FaGithubSquare, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 export default function Nav() {
