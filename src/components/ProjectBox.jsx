@@ -22,7 +22,7 @@ export default function ProjectBox({
   React.useEffect(() => {
     let projectCard = document.getElementById(`project-box-${id}`);
     // console.log(projectCard);
-    console.log(projectCard.clientWidth);
+    // console.log(projectCard.clientWidth);
     projectCard.addEventListener("resize", () => {
       if (projectCard.clientWidth < 125) {
         setCardMobile(true);
@@ -31,7 +31,7 @@ export default function ProjectBox({
       }
     });
 
-    console.log("Mobile Mode?", cardMobile);
+    // console.log("Mobile Mode?", cardMobile);
   }, [setCardMobile, cardMobile, id]);
 
   return (
