@@ -38,13 +38,13 @@ const projects = [
     largeImg: "https://i.imgur.com/btqDo6Q.png",
     smallImg: "https://i.imgur.com/H2hW2l8.jpg",
   },
-  {
-    name: "Kpop or Final Fantasy?",
-    link: "https://kpopvsfinalfantasy.netlify.app/",
-    gitLink: "https://github.com/peacebonez/-Kpop-Vs-Final-Fantasy-Game",
-    largeImg: "https://i.imgur.com/WDPfNiR.png",
-    smallImg: "https://i.imgur.com/eSai5ru.jpg",
-  },
+  // {
+  //   name: "Kpop or Final Fantasy?",
+  //   link: "https://kpopvsfinalfantasy.netlify.app/",
+  //   gitLink: "https://github.com/peacebonez/-Kpop-Vs-Final-Fantasy-Game",
+  //   largeImg: "https://i.imgur.com/WDPfNiR.png",
+  //   smallImg: "https://i.imgur.com/eSai5ru.jpg",
+  // },
 ];
 let id = 0;
 export default function Projects() {
