@@ -15,30 +15,28 @@ export default function Email() {
       >
         <div className="form-elements">
           <fieldset className="pure-group">
-            <label for="name">Name: </label>
             <input
               id="name"
+              className="form-input"
               name="name"
-              placeholder="What your Mom calls you"
+              placeholder="Your Name"
             />
           </fieldset>
 
           <fieldset className="pure-group">
-            <label for="message">Message: </label>
             <textarea
+              className="form-input"
               id="message"
               name="message"
-              rows="10"
-              placeholder="Tell us what's on your mind..."
+              rows="8"
+              placeholder="Your Message"
             ></textarea>
           </fieldset>
 
           <fieldset className="pure-group">
-            <label for="email">
-              <em>Your</em> Email Address:
-            </label>
             <input
               id="email"
+              className="form-input"
               name="email"
               type="email"
               //   value=""
@@ -50,15 +48,15 @@ export default function Email() {
             </span>
           </fieldset>
 
-          <button>
-            <FaPaperPlane />
+          <button className="submit-btn">
+            <FaPaperPlane id="plane" />
             Send
           </button>
         </div>
 
         <div className="thankyou_message" style={{ display: "none" }}>
           <h2>
-            <em>Thanks</em> for contacting us! We will get back to you soon!
+            <em>Thanks</em> for the email! I'll get back to you soon!
           </h2>
         </div>
       </form>

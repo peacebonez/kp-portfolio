@@ -237,12 +237,84 @@ h2 {
   opacity: 0.9;
 }
 
+/* EMAIL FORM  */
+
+.email-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+
+  width: 100vw;
+}
+
+.content-head {
+  font-size: 7vw;
+  font-weight: bold;
+}
+
+.gform {
+  border-top: solid 1px black;
+}
+
+.pure-group {
+  border: none;
+}
+
+.form-elements {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
+
+.form-input {
+  color: black;
+  width: 80vw;
+  font-size: 6vw;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+#name {
+  padding: 2vw 0;
+  border-bottom: 1px solid black;
+  text-align: left;
+}
+#message {
+}
+#email {
+  padding: 2vw 0;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.submit-btn {
+  font-size: 6vw;
+  padding: 3vw 5vw;
+  margin: 2vh;
+  border: solid 1px black;
+  background: none;
+  outline: none;
+
+  cursor: pointer;
+}
+
+#plane {
+  margin-right: 2vw;
+}
+
+::placeholder {
+  color: black;
+}
+
+/* FOOTER */
+
 .footer {
   display: flex;
   justify-content: flex-start;
-  /* background: #fff; */
   align-items: center;
-  /* border-top: 1px solid #aaa; */
 }
 
 #footer-hr {
@@ -255,7 +327,6 @@ h2 {
   width: 40%;
   text-align: center;
   cursor: pointer;
-  /* border-right: solid 1px #fff; */
 }
 
 .footer-img img {
@@ -281,6 +352,41 @@ h2 {
   margin-top: -3vw;
   font-size: 3vw;
   color: #000;
+}
+
+/* Landscape Media QUERIES */
+
+@media only screen and (orientation: landscape) {
+  .tech-icon {
+    font-size: 10vw;
+    margin-bottom: 10vh;
+  }
+  .projects-header {
+    /* height: 40vh; */
+    height: 40%;
+    transform: rotate(-4deg) translateY(-15vh);
+  }
+
+  #resume-btn {
+    margin-bottom: 15vh;
+  }
+
+  .project-box {
+    height: 70vh;
+  }
+
+  .content-head {
+    font-size: 5vw;
+  }
+
+  .form-input {
+    font-size: 3vw;
+  }
+
+  .submit-btn {
+    font-size: 3vw;
+    padding: 2vw 3vw;
+  }
 }
 
 /* VERTICAL MEDIA QUERIES */
@@ -338,6 +444,19 @@ h2 {
 
   #resume-btn {
     font-size: 2.5vw;
+  }
+
+  .content-head {
+    font-size: 4vw;
+  }
+
+  .form-input {
+    font-size: 3vw;
+  }
+
+  .submit-btn {
+    font-size: 3vw;
+    padding: 2vw 3vw;
   }
 
   .footer {
@@ -430,6 +549,27 @@ h2 {
     padding: 2vw 3vw;
   }
 
+  .email-container {
+    width: 80vw;
+  }
+
+  .form-elements {
+    width: 70vw;
+  }
+
+  .content-head {
+    font-size: 3vw;
+  }
+
+  .form-input {
+    font-size: 2vw;
+    width: 70vw;
+  }
+
+  .submit-btn {
+    font-size: 2vw;
+  }
+
   .footer-img {
     width: 30%;
   }
@@ -493,6 +633,19 @@ h2 {
     margin: 3vw 3vw 6vw 3vw;
     padding: 1vw 4vw;
   }
+
+  .content-head {
+    font-size: 2vw;
+  }
+
+  .form-input {
+    font-size: 1vw;
+  }
+
+  .submit-btn {
+    font-size: 2vw;
+    padding: 1vw 2vw;
+  }
 }
 
 @media only screen and (min-width: 1550px) {
@@ -514,26 +667,24 @@ h2 {
     margin: 3vw;
     padding: 1vw 4vw;
   }
-}
-
-/* Landscape Media QUERIES */
-
-@media only screen and (orientation: landscape) {
-  .tech-icon {
-    font-size: 10vw;
-    margin-bottom: 10vh;
-  }
-  .projects-header {
-    /* height: 40vh; */
-    height: 40%;
-    transform: rotate(-4deg) translateY(-15vh);
+  .email-container {
+    width: 80vw;
   }
 
-  #resume-btn {
-    margin-bottom: 15vh;
+  .form-elements {
+    width: 70vw;
   }
 
-  .project-box {
-    height: 70vh;
+  .content-head {
+    font-size: 3vw;
+  }
+
+  .form-input {
+    font-size: 2vw;
+    width: 70vw;
+  }
+
+  .submit-btn {
+    font-size: 2vw;
   }
 }

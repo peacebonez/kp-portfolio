@@ -22,8 +22,8 @@ function Portfolio() {
       <Nav />
       <About />
       <Projects />
-      <Footer />
       <Email />
+      <Footer />
     </div>
   );
 }
