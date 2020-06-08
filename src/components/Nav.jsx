@@ -9,7 +9,7 @@ export default function Nav() {
       if (prevScrollpos > currentScrollPos) {
         document.querySelector(".nav-container").style.top = 0;
       } else {
-        document.querySelector(".nav-container").style.top = "-145px";
+        document.querySelector(".nav-container").style.top = "-245px";
       }
       prevScrollpos = currentScrollPos;
     };

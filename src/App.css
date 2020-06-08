@@ -493,6 +493,7 @@ h2 {
 
   .about-container h3 {
     font-size: 3vw;
+    margin-top: 14vh;
   }
 
   .about-container li {
@@ -500,14 +501,22 @@ h2 {
   }
 
   .project-box {
-    width: 30vw;
-    height: 20vh;
+    width: 40vw;
+    height: 40vh;
     margin: 3vw;
   }
 
   .projects-header {
     transform: rotate(-4deg) translateY(-5.5vh);
-    height: 30vh;
+    height: 20vh;
+  }
+
+  .projects-header h3 {
+    font-size: 3vw;
+  }
+
+  #chevron {
+    font-size: 2vw;
   }
 
   .tech-icon {
@@ -596,7 +605,7 @@ h2 {
   }
 
   .projects-header {
-    height: 30vh;
+    height: 25vh;
   }
 
   #resume-btn {
@@ -620,6 +629,9 @@ h2 {
 }
 
 @media only screen and (min-width: 1550px) {
+  .about-container h3 {
+    margin-top: 15vh;
+  }
   .projects-header {
     height: 45vh;
   }
@@ -658,6 +670,15 @@ h2 {
   .submit-btn {
     font-size: 2vw;
   }
+
+  .footer-text h4 {
+    font-size: 2vw;
+  }
+
+  .footer-text p {
+    margin-top: -3vw;
+    font-size: 2.5vw;
+  }
 }
 
 /* Landscape Media QUERIES */
@@ -676,14 +697,14 @@ h2 {
   }
 
   .about-container h3 {
-    margin-top: 23vh;
+    margin-top: 18vw;
   }
   .tech-icon {
-    font-size: 10vw;
+    font-size: 15vw;
     margin-bottom: 10vh;
   }
   .projects-header {
-    height: 40vh;
+    height: 30vw;
     transform: rotate(-4deg) translateY(-10vh);
   }
 
@@ -696,8 +717,8 @@ h2 {
   }
 
   .project-box {
-    height: 50vh;
-    width: 30vw;
+    height: 80vw;
+    width: 80vw;
   }
 
   .content-head {
