@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaArrowUp } from "react-icons/fa";
+import { FaArrowUp, FaFile } from "react-icons/fa";
 
 export default function Footer() {
   const [isHover, setIsHover] = useState(false);
@@ -31,6 +31,14 @@ export default function Footer() {
             alt="Author standing on a rooftop in Singapore"
             style={{ opacity: isHover ? 0.5 : 1 }}
           ></img>
+        </div>
+        <div className="resume-box">
+          <a>
+            <button id="resume">
+              <FaFile />
+              Resumé
+            </button>
+          </a>
         </div>
         <div className="footer-text">
           <ul>

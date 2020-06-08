@@ -41,11 +41,6 @@ export default function About() {
           <FaCss3Alt className="tech-icon" />
         </div>
       </div>
-      <div id="resume-container">
-        <a href="">
-          <button id="resume-btn">Resumé</button>
-        </a>
-      </div>
     </div>
   );
 }
