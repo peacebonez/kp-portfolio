@@ -51,7 +51,7 @@ export default function Projects() {
   return (
     <div className="projects-container">
       <div className="projects-header">
-        <h3>Projects</h3>
+        <h3>Recent Projects</h3>
         <a href="#project-box-1">
           <button id="chevron">
             <FaChevronDown />

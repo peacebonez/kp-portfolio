@@ -21,17 +21,25 @@ export default function Nav() {
         <h2>Web Developer</h2>
       </div>
       <ul className="nav-list">
-        <a>
+        <a
+          href="https://github.com/peacebonez"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <li id="git-square">
             <FaGithubSquare />
           </li>
         </a>
-        <a>
+        <a
+          href="https://www.linkedin.com/in/kevin-pariso-584b709b"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <li id="linked-in">
             <FaLinkedin />
           </li>
         </a>
-        <a>
+        <a href="mailto:kmpariso12@gmail.com">
           <li id="envelope">
             <FaEnvelope />
           </li>

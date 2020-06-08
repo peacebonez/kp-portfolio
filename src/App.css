@@ -18,8 +18,13 @@ ul {
   list-style-type: none;
 }
 
+ul h1 {
+  text-decoration: underline;
+}
+
 a {
   text-decoration: none;
+  color: black;
 }
 
 .App {
@@ -84,6 +89,12 @@ h2 {
   transition: 0.6s ease-in;
   width: 100vw;
 }
+
+#learn {
+  font-weight: 700;
+  font-style: oblique;
+}
+
 .about-container h3 {
   margin-top: 13vh;
   padding: 2vw;
