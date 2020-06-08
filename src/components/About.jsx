@@ -12,8 +12,8 @@ export default function About() {
         with a team at my side. Learning has always been a passion of mine, but
         at some point <span id="learn">the learning must become doing</span>{" "}
         which brings us this portfolio website. <br></br>Please do have a look
-        around, <span id="judge">try not to judge too harshly</span>, and if you
-        feel inclined, there's plenty of opportunities to reach out!
+        around, and if you feel inclined, there's plenty of opportunities to
+        reach out!
       </h3>
       <ul>
         <h1>Core Technologies</h1>
