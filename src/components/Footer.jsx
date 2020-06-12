@@ -33,7 +33,7 @@ export default function Footer() {
           ></img>
         </div>
         <div className="resume-box">
-          <a href="./Kevin-Pariso-Resume.pdf" download>
+          <a href="https://docs.google.com/document/d/1r_nwNXq3zfGhQz_Kwu3cScxJA2F7XdwDovS49DHvKN8/edit?usp=sharing">
             <button id="resume">
               <FaFile />
               Resumé
