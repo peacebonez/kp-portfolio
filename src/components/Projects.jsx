@@ -4,6 +4,13 @@ import { FaChevronDown } from "react-icons/fa";
 
 const projects = [
   {
+    name: "Facetune Fails Blog",
+    link: "https://radiant-plateau-54256.herokuapp.com/",
+    gitLink: "https://github.com/peacebonez/facetune-fails",
+    largeImg: "https://i.imgur.com/ZeLmkPD.gif",
+    smallImg: "https://i.imgur.com/ZeLmkPD.gif",
+  },
+  {
     name: "E-Commerce",
     link: "https://black-market-market.netlify.app/",
     gitLink: "https://github.com/peacebonez/eccommerce-black-market",
@@ -24,13 +31,13 @@ const projects = [
     largeImg: "https://i.imgur.com/BbZJX4h.png",
     smallImg: "https://i.imgur.com/6YQr8ge.jpg",
   },
-  {
-    name: "Drum Machine",
-    link: "https://fcc-drum-machine-react.netlify.app/",
-    gitLink: "https://github.com/peacebonez/FCC-drum-machine",
-    largeImg: "https://i.imgur.com/UfpjhHg.png",
-    smallImg: "https://i.imgur.com/EtYd8jx.jpg",
-  },
+  // {
+  //   name: "Drum Machine",
+  //   link: "https://fcc-drum-machine-react.netlify.app/",
+  //   gitLink: "https://github.com/peacebonez/FCC-drum-machine",
+  //   largeImg: "https://i.imgur.com/UfpjhHg.png",
+  //   smallImg: "https://i.imgur.com/EtYd8jx.jpg",
+  // },
   {
     name: "Virtual Library",
     link: "https://virtual-library.netlify.app/",
