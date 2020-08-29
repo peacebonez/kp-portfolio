@@ -11,6 +11,13 @@ const projects = [
     smallImg: "https://i.imgur.com/ZeLmkPD.gif",
   },
   {
+    name: "Self Marketing Twitter Bot",
+    link: "https://twitter.com/kpizo3",
+    gitLink: "https://github.com/peacebonez/twitter-bot-v2",
+    largeImg: "https://media.giphy.com/media/fSFbBPmr4HPRwW0VMo/giphy.gif",
+    smallImg: "https://media.giphy.com/media/fSFbBPmr4HPRwW0VMo/giphy.gif",
+  },
+  {
     name: "E-Commerce",
     link: "https://black-market-market.netlify.app/",
     gitLink: "https://github.com/peacebonez/eccommerce-black-market",
