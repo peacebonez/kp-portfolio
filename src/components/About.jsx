@@ -34,6 +34,8 @@ export default function About() {
         <li>Git/Github</li>
         <li>JEST</li>
         <li>Webscraping (node fetch, puppeteer)</li>
+        <li>Google Cloud</li>
+        <li>AWS/Amplify</li>
       </ul>
       <div className="icons-div">
         <div>
