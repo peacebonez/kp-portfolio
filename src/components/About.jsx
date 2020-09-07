@@ -15,7 +15,9 @@ export default function About() {
         you feel inclined, there's plenty of opportunities to reach out!
       </h3>
       <ul>
-        <h1>Core Technologies</h1>
+        <li>
+          <h1>Core Technologies</h1>
+        </li>
         <li>Javascript</li>
         <li>React</li>
         <li>Node.js + Express</li>
@@ -23,10 +25,15 @@ export default function About() {
         <li>HTML + CSS (SCSS, Responsive, Flex-box)</li>
       </ul>
       <ul>
-        <h1>Additional Experience With...</h1>
+        <li>
+          <h1>Additional Experience With...</h1>
+        </li>
         <li>Bootstrap</li>
         <li>JQuery</li>
-        <li>Python</li>
+        <li>Redux</li>
+        <li>Git/Github</li>
+        <li>JEST</li>
+        <li>Webscraping (node fetch, puppeteer)</li>
       </ul>
       <div className="icons-div">
         <div>
