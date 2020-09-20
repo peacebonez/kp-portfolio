@@ -1,7 +1,34 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FaJs, FaHtml5, FaCss3Alt, FaReact, FaNpm } from "react-icons/fa";
 
 export default function About() {
+  useEffect(() => {
+    const icons = document.querySelectorAll(".tech-icon");
+
+    const fadeIn = (delay) => {
+      icons.forEach((icon) => {
+        const iconTop = icon.getBoundingClientRect().top;
+        const iconBottom = icon.getBoundingClientRect().bottom;
+
+        if (iconTop < window.innerHeight && iconBottom > 0) {
+          icon.style.animation = `fadeIn 2.5s ${delay}s both`;
+          delay = delay + 0.25;
+        } else {
+          icon.style.opacity = 0;
+          icon.style.animation = "";
+        }
+      });
+    };
+
+    fadeIn(0.1);
+    document.addEventListener("scroll", () => {
+      fadeIn(0.1);
+    });
+    window.addEventListener("resize", () => {
+      fadeIn(0.1);
+    });
+  });
+
   return (
     <div className="about-container">
       <h3>
@@ -35,7 +62,6 @@ export default function About() {
         <li>JEST</li>
         <li>Webscraping (node fetch, puppeteer)</li>
         <li>Google Cloud</li>
-        <li>AWS/Amplify</li>
       </ul>
       <div className="icons-div">
         <div>
