@@ -4,18 +4,18 @@ import { FaChevronDown } from "react-icons/fa";
 
 const projects = [
   {
-    name: "e-Enroll Web Scraper",
-    link: "#",
-    gitLink: "https://github.com/peacebonez/e-course-scraper",
-    largeImg: "https://media.giphy.com/media/FaAKLOXTsvYAADkiqc/giphy.gif",
-    smallImg: "https://media.giphy.com/media/FaAKLOXTsvYAADkiqc/giphy.gif",
-  },
-  {
     name: "Facetune Fails Blog",
     link: "https://radiant-plateau-54256.herokuapp.com/",
     gitLink: "https://github.com/peacebonez/facetune-fails",
     largeImg: "https://i.imgur.com/ZeLmkPD.gif",
     smallImg: "https://i.imgur.com/ZeLmkPD.gif",
+  },
+  {
+    name: "e-Enroll Web Scraper",
+    link: "https://dry-gorge-55629.herokuapp.com/",
+    gitLink: "https://github.com/peacebonez/e-course-scraper",
+    largeImg: "https://media.giphy.com/media/FaAKLOXTsvYAADkiqc/giphy.gif",
+    smallImg: "https://media.giphy.com/media/FaAKLOXTsvYAADkiqc/giphy.gif",
   },
   {
     name: "Self Marketing Twitter Bot",
@@ -58,13 +58,6 @@ const projects = [
   //   gitLink: "https://github.com/peacebonez/library-app",
   //   largeImg: "https://i.imgur.com/btqDo6Q.png",
   //   smallImg: "https://i.imgur.com/H2hW2l8.jpg",
-  // },
-  // {
-  //   name: "Kpop or Final Fantasy?",
-  //   link: "https://kpopvsfinalfantasy.netlify.app/",
-  //   gitLink: "https://github.com/peacebonez/-Kpop-Vs-Final-Fantasy-Game",
-  //   largeImg: "https://i.imgur.com/WDPfNiR.png",
-  //   smallImg: "https://i.imgur.com/eSai5ru.jpg",
   // },
 ];
 let id = 0;
