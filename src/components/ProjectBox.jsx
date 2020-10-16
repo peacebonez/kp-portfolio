@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import PropTypes from "prop-types";
 import { FaGithubSquare } from "react-icons/fa";
 
 export default function ProjectBox({
@@ -64,3 +65,12 @@ export default function ProjectBox({
     </div>
   );
 }
+
+ProjectBox.propTypes = {
+  name: PropTypes.string.isRequired,
+  link: PropTypes.string,
+  gitLink: PropTypes.string,
+  smallImg: PropTypes.string,
+  largeImg: PropTypes.string,
+  id: PropTypes.number.isRequired,
+};

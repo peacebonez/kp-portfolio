@@ -11,18 +11,25 @@ const projects = [
     smallImg: "https://i.imgur.com/ZeLmkPD.gif",
   },
   {
+    name: "npm react-blend-buttons",
+    link: "https://loving-edison-6a8a92.netlify.app/",
+    gitLink: "https://www.npmjs.com/package/react-blend-buttons",
+    largeImg: "https://media.giphy.com/media/sdb95iGCQ4Kk6nHdDl/giphy.gif",
+    smallImg: "https://media.giphy.com/media/sdb95iGCQ4Kk6nHdDl/giphy.gif",
+  },
+  {
+    name: "Recipe Finder",
+    link: "https://food-finder-app.netlify.app/",
+    gitLink: "https://github.com/peacebonez/recipe-app",
+    largeImg: "https://i.imgur.com/BbZJX4h.png",
+    smallImg: "https://i.imgur.com/6YQr8ge.jpg",
+  },
+  {
     name: "e-Enroll Web Scraper",
     link: "https://dry-gorge-55629.herokuapp.com/",
     gitLink: "https://github.com/peacebonez/e-course-scraper",
     largeImg: "https://media.giphy.com/media/FaAKLOXTsvYAADkiqc/giphy.gif",
     smallImg: "https://media.giphy.com/media/FaAKLOXTsvYAADkiqc/giphy.gif",
-  },
-  {
-    name: "Self Marketing Twitter Bot",
-    link: "https://twitter.com/kpizo3",
-    gitLink: "https://github.com/peacebonez/twitter-bot-v2",
-    largeImg: "https://media.giphy.com/media/fSFbBPmr4HPRwW0VMo/giphy.gif",
-    smallImg: "https://media.giphy.com/media/fSFbBPmr4HPRwW0VMo/giphy.gif",
   },
   {
     name: "E-Commerce",
@@ -38,13 +45,13 @@ const projects = [
     largeImg: "https://i.imgur.com/FlWcltw.png",
     smallImg: "https://i.imgur.com/DQ72IyF.jpg",
   },
-  {
-    name: "Recipe Finder",
-    link: "https://food-finder-app.netlify.app/",
-    github: "https://github.com/peacebonez/recipe-app",
-    largeImg: "https://i.imgur.com/BbZJX4h.png",
-    smallImg: "https://i.imgur.com/6YQr8ge.jpg",
-  },
+  // {
+  //   name: "Self Marketing Twitter Bot",
+  //   link: "https://twitter.com/kpizo3",
+  //   gitLink: "https://github.com/peacebonez/twitter-bot-v2",
+  //   largeImg: "https://media.giphy.com/media/fSFbBPmr4HPRwW0VMo/giphy.gif",
+  //   smallImg: "https://media.giphy.com/media/fSFbBPmr4HPRwW0VMo/giphy.gif",
+  // },
   // {
   //   name: "Drum Machine",
   //   link: "https://fcc-drum-machine-react.netlify.app/",
