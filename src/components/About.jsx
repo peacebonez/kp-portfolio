@@ -29,6 +29,21 @@ export default function About() {
     });
   });
 
+  useEffect(() => {
+
+    const header = document.querySelector(".projects-header");
+    console.log("header:", header);
+    const circle = document.querySelector("#magic-circle");
+    console.log("circle:", circle);
+    
+    let headerCoords = header.getBoundingClientRect();
+    console.log('headerCoords:', headerCoords)
+
+    document.addEventListener("scroll", function() {
+      const pixels = window.pageYOffset;
+    })
+  })
+
   return (
     <section className="about-container">
       <div id="magic-circle"></div>
