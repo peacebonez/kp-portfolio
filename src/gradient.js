@@ -2,7 +2,7 @@
 
 export default function () {
   let hue = 200;
-  let light = 65;
+  let light = 75;
   let deg = 90;
   let flagHue = true;
   let flagLight = true;
@@ -51,9 +51,8 @@ export default function () {
       hue + 30
     }, 100%, ${light + 20}%))`;
 
-    // bodyMain.style.background = `hsl(${hue}, 100%, ${light}%)`; // Neon
-    // bodyMain.style.background = `hsl(${hue}, 50%, ${light}%)`; // Balance between the 2
-    // console.log(bodyMain.style.backgroundImage)
+    // document.style.backgroundImage = `hsl(${hue}, 100%, ${light}%)`; // Neon
+    // document.style.backgroundImage = `hsl(${hue}, 50%, ${light}%)`; // Balance between the 2
   }
 
   //calling function to gradually change the background of the website

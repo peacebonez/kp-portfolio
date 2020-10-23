@@ -27,6 +27,10 @@ a {
   color: black;
 }
 
+textarea {
+  resize: none;
+}
+
 .App {
   display: flex;
   flex-direction: column;
@@ -38,16 +42,18 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #fff;
+  background: #000;
   position: fixed;
-  z-index: 3;
+  z-index: 2;
   transition: top 0.3s;
+  border-bottom: solid 1px #ddd;
 }
 
 .nav-container h1,
 h2 {
   text-align: center;
   margin-left: 3vw;
+  color: #fff;
   text-shadow: 0.4px 0.4px white;
 }
 
@@ -71,10 +77,11 @@ h2 {
   margin: 1vw;
   cursor: pointer;
   transform: translate(-6vw);
+  color: #eee;
 }
 
 .nav-list li:hover {
-  color: #a822fd;
+  color: #f2ba9a;
 }
 
 .about-container {
@@ -82,30 +89,102 @@ h2 {
   display: flex;
   flex-direction: column;
   padding: 2vw 0 9vh 0;
-  background: #fff;
-  background-image: url("https://i.imgur.com/nYdUbNz.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #fbf8f5;
+  background-repeat: repeat;
+  background-size: contain;
   transition: 0.6s ease-in;
   width: 100vw;
 }
 
-#learn {
-  font-weight: 700;
-  font-style: oblique;
+#magic-circle {
+  position: fixed;
+  width: 5.5vw;
+  height: 5.5vw;
+  top: 20vh;
+  right: 25%;
+  background-color: #d5dade;
+  z-index: 0;
+  border-radius: 50%;
+}
+#magic-square {
+  position: absolute;
+  width: 5.5vw;
+  height: 5.5vw;
+  top: 75vh;
+  left: 20%;
+  background-color: #d5dade;
+  z-index: 0;
+  box-shadow: 5px 5px 1px black;
 }
 
-#judge {
-  font-size: 1.5vw;
-  font-style: italic;
+.about-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15vh;
 }
 
-.about-container h3 {
-  margin-top: 13vh;
+.about-box {
+  border: solid 1px black;
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #333;
+  font-size: 2vw;
+  margin: 3vw;
   padding: 2vw;
+  border: none;
+  box-shadow: 10px 10px 0px #333;
+  z-index: 1;
+}
+
+.about-box h2 {
+  font-family: "Architects Daughter", cursive;
+}
+
+#about-box-1 {
+  background-color: #f1e5d5;
+  animation-name: left-to-right;
+  animation-duration: 1.5s;
+  animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+#about-box-1:hover {
+  transform: rotate(5deg);
+  transition: all 0.4s;
+}
+
+#about-box-2 {
+  background-color: #c9bab5;
+  align-self: flex-end;
+  animation-name: right-to-left;
+  animation-duration: 2.5s;
+  animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  border-radius: 50%;
+}
+
+#about-box-2:hover {
+  transform: rotate(-5deg);
+  transition: all 0.4s;
+}
+
+#about-box-3 {
+  background-color: #f2ba9a;
+  align-self: center;
+  transition: all 0.4s;
+  border-radius: 20px;
+}
+
+#about-box-3:hover {
+  transform: scale(1.2);
 }
 
 .about-container ul {
+  background: white;
+  width: 50%;
+  padding: 3.5vw;
+  margin-left: 2vw;
+  box-shadow: 10px 10px 0px #333;
 }
 
 .icons-div {
@@ -145,9 +224,8 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #333;
+  background: #000;
   color: #fff;
-
   transform: rotate(-4deg) translateY(-1.5vh);
 }
 
@@ -156,6 +234,7 @@ h2 {
   font-size: 5vw;
   font-weight: 700;
   transform: rotate(4deg);
+  font-family: "Architects Daughter", cursive;
 }
 
 #chevron {
@@ -182,8 +261,7 @@ h2 {
   transition: all 0.5s;
   margin: 4vh 0;
 
-  box-shadow: 1px 1px 5px gray;
-  border-radius: 15px;
+  box-shadow: 10px 10px 1px black;
 }
 
 .box-hover {
@@ -195,15 +273,12 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-
   height: 8vh;
   width: 100%;
   background: whitesmoke;
   color: #333;
   text-align: center;
   transition: all 0.3s;
-
-  border-radius: 0 0 15px 15px;
 }
 
 .project-box p {
@@ -369,30 +444,38 @@ h2 {
   color: #000;
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
 /* VERTICAL MEDIA QUERIES */
 
-@media only screen and (min-width: 320px) {
+@media only screen and (max-width: 412px) {
   .about-container h3 {
     margin-top: 7vh;
     padding: 2vw;
   }
+
+  .about-box {
+    width: 75%;
+    margin: 4vh 2vh;
+  }
+
+  .about-box h2 {
+    font-size: 7vw;
+    padding: 3vw;
+  }
+
+  .about-container ul {
+    width: 75%;
+    padding-bottom: 5vh;
+  }
+
+  #magic-circle {
+    width: 10vw;
+    height: 10vw;
+  }
+  #magic-square {
+    width: 10vw;
+    height: 10vw;
+  }
+
   #fa-up {
     font-size: 6.5vw;
     transform: translate(100%, 100%);
@@ -424,12 +507,10 @@ h2 {
   .project-box {
     width: 40vw;
     height: 30vh;
-    border-radius: 0;
     margin: 3vw;
   }
 
   .project-box div {
-    border-radius: 0;
   }
 
   .git-link {
@@ -485,7 +566,6 @@ h2 {
   .project-box {
     width: 40vw;
     height: 30vh;
-    border-radius: 0;
     margin: 3vw;
   }
 
@@ -615,7 +695,6 @@ h2 {
   .project-box {
     width: 30vw;
     height: 30vh;
-    border-radius: 0;
   }
 
   .projects-header {
@@ -646,11 +725,8 @@ h2 {
 
   .project-box {
     transform: translateY(-8vh);
-  }
-  .project-box {
     width: 25vw;
     height: 30vh;
-    border-radius: 0;
   }
 
   .email-container {
@@ -731,5 +807,45 @@ h2 {
   .submit-btn {
     font-size: 3vw;
     padding: 2vw 3vw;
+  }
+}
+
+/* animations */
+
+@keyframes left-to-right {
+  from {
+    transform: translateX(-100vw);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0vw);
+    opacity: 1;
+  }
+}
+@keyframes right-to-left {
+  from {
+    transform: translateX(100vw);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0vw);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
