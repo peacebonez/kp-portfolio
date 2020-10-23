@@ -29,39 +29,20 @@ export default function About() {
     });
   });
 
-  useEffect(() => {
-
-    const header = document.querySelector(".projects-header");
-    console.log("header:", header);
-    const circle = document.querySelector("#magic-circle");
-    console.log("circle:", circle);
-    
-    let headerCoords = header.getBoundingClientRect();
-    console.log('headerCoords:', headerCoords)
-
-    document.addEventListener("scroll", function() {
-      const pixels = window.pageYOffset;
-    })
-  })
-
   return (
     <section className="about-container">
       <div id="magic-circle"></div>
       <div id="magic-square"></div>
       <div className="about-wrapper">
-      <div className="about-box" id="about-box-1">
-        <h2>What's Up!</h2>
-      </div>
-      <div className="about-box" id="about-box-2">
-        <h2>
-          I'm Kevin and I'm a web developer living in Brooklyn, NY. 
-        </h2>
-      </div>
-      <div className="about-box" id="about-box-3">
-        <h2>
-        Let's work together!
-        </h2>
-      </div>
+        <div className="about-box" id="about-box-1">
+          <h2>What's Up!</h2>
+        </div>
+        <div className="about-box" id="about-box-2">
+          <h2>I'm Kevin and I'm a web developer living in Brooklyn, NY.</h2>
+        </div>
+        <div className="about-box" id="about-box-3">
+          <h2>Let's work together!</h2>
+        </div>
       </div>
       <ul>
         <li>

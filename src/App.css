@@ -116,6 +116,7 @@ h2 {
   background-color: #d5dade;
   z-index: 0;
   border-radius: 50%;
+  transition: opacity 0.5s;
 }
 #magic-square {
   position: absolute;
@@ -147,6 +148,12 @@ h2 {
   border: none;
   box-shadow: 10px 10px 0px #333;
   z-index: 1;
+
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
 }
 
 .about-box h2 {
@@ -162,7 +169,6 @@ h2 {
 
 #about-box-1:hover {
   transform: rotate(5deg);
-  transition: all 0.4s;
 }
 
 #about-box-2 {
@@ -176,7 +182,6 @@ h2 {
 
 #about-box-2:hover {
   transform: rotate(-5deg);
-  transition: all 0.4s;
 }
 
 #about-box-3 {

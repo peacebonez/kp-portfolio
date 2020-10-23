@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import Nav from "./components/Nav";
 import About from "./components/About";
 import Projects from "./components/Projects";
@@ -9,23 +9,32 @@ import "./App.css";
 import gradient from "./gradient";
 
 function Portfolio() {
-  useEffect(() => 
-  //when we scroll page, advance progress bar
-  document.addEventListener("scroll", function() {
-    const pixels = window.pageYOffset;
+  useEffect(() => {
+    //when we scroll page, advance progress bar
+
     const progressBar = document.querySelector("#progress-bar");
-    const pageHeight = Math.round(document.body.getBoundingClientRect().height)
-    console.log("pageHeight", pageHeight)
+    const circle = document.querySelector("#magic-circle");
 
-    const scrollDistance = (pageHeight - window.innerHeight)
+    document.addEventListener("scroll", function () {
+      const pixels = window.pageYOffset;
 
-    const percentage = pixels / scrollDistance;
+      const pageHeight = Math.round(
+        document.body.getBoundingClientRect().height
+      );
+      const scrollDistance = pageHeight - window.innerHeight;
 
-    progressBar.style.width = `${percentage * 100}%`;
-  }))
+      const percentage = pixels / scrollDistance;
+
+      progressBar.style.width = `${percentage * 100}%`;
+
+      if (percentage * 100 > 60) circle.style.opacity = 0;
+      else circle.style.opacity = 1;
+    });
+  });
+
   return (
     <div className="App">
-      <div id="progress-bar"/>
+      <div id="progress-bar" />
       <Nav />
       <About />
       <Projects />
