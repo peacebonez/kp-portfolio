@@ -25,6 +25,13 @@ const projects = [
     smallImg: "https://i.imgur.com/6YQr8ge.jpg",
   },
   {
+    name: "Sip Coffee House",
+    link: "https://competent-colden-44dbfd.netlify.app/",
+    gitLink: "https://github.com/peacebonez/sip-website",
+    largeImg: "https://i.imgur.com/BdbjkZY.gif",
+    smallImg: "https://i.imgur.com/BdbjkZY.gif",
+  },
+  {
     name: "e-Enroll Web Scraper",
     link: "https://dry-gorge-55629.herokuapp.com/",
     gitLink: "https://github.com/peacebonez/e-course-scraper",
@@ -38,13 +45,13 @@ const projects = [
     largeImg: "https://i.imgur.com/FyGCClS.png",
     smallImg: "https://i.imgur.com/odp6Ga8.jpg",
   },
-  {
-    name: "Vaporwave Memory Game",
-    link: "https://memory-card-game-with-hooks.netlify.app/",
-    gitLink: "https://github.com/peacebonez/memory-app-with-hooks",
-    largeImg: "https://i.imgur.com/FlWcltw.png",
-    smallImg: "https://i.imgur.com/DQ72IyF.jpg",
-  },
+  // {
+  //   name: "Vaporwave Memory Game",
+  //   link: "https://memory-card-game-with-hooks.netlify.app/",
+  //   gitLink: "https://github.com/peacebonez/memory-app-with-hooks",
+  //   largeImg: "https://i.imgur.com/FlWcltw.png",
+  //   smallImg: "https://i.imgur.com/DQ72IyF.jpg",
+  // },
   // {
   //   name: "Self Marketing Twitter Bot",
   //   link: "https://twitter.com/kpizo3",
