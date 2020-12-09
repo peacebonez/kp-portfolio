@@ -45,13 +45,6 @@ const projects = [
     largeImg: "https://media.giphy.com/media/FaAKLOXTsvYAADkiqc/giphy.gif",
     smallImg: "https://media.giphy.com/media/FaAKLOXTsvYAADkiqc/giphy.gif",
   },
-  {
-    name: "E-Commerce",
-    link: "https://black-market-market.netlify.app/",
-    gitLink: "https://github.com/peacebonez/eccommerce-black-market",
-    largeImg: "https://i.imgur.com/FyGCClS.png",
-    smallImg: "https://i.imgur.com/odp6Ga8.jpg",
-  },
 ];
 let id = 0;
 export default function Projects() {
