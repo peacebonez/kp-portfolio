@@ -38,13 +38,15 @@ export default function About() {
           <h2>What's Up!</h2>
         </div>
         <div className="about-box" id="about-box-2">
-          <h2>I'm Kevin and I'm a web developer living in Brooklyn, NY.</h2>
+          <h2>
+            I'm Kevin and I'm a full stack developer living in Brooklyn, NY.
+          </h2>
         </div>
         <div className="about-box" id="about-box-3">
           <h2>Let's work together!</h2>
         </div>
       </div>
-      <ul>
+      {/* <ul>
         <li>
           <h1>Core Technologies</h1>
         </li>
@@ -65,7 +67,7 @@ export default function About() {
         <li>JEST</li>
         <li>Webscraping (node fetch, puppeteer)</li>
         <li>Google Cloud</li>
-      </ul>
+      </ul> */}
       <div className="icons-div">
         <div>
           <FaJs className="tech-icon" id="jsIcon" />

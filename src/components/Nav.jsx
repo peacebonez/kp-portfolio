@@ -18,7 +18,7 @@ export default function Nav() {
     <div className="nav-container">
       <div>
         <h1>Kevin M. Pariso</h1>
-        <h2>Web Developer</h2>
+        <h2>Full Stack Developer</h2>
       </div>
       <ul className="nav-list">
         <a

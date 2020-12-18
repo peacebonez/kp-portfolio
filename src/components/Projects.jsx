@@ -4,18 +4,25 @@ import { FaChevronDown } from "react-icons/fa";
 
 const projects = [
   {
-    name: "World Chat",
+    name: "World Chat Messenger App",
     link: "https://world-chat-mern.herokuapp.com/",
     gitLink: "https://github.com/peacebonez/world-chat",
     largeImg: "https://i.imgur.com/1NwifmG.png",
     smallImg: "https://i.imgur.com/1NwifmG.png",
   },
   {
-    name: "Facetune Fails Blog",
+    name: "Facetune Fails Blog Platform",
     link: "https://radiant-plateau-54256.herokuapp.com/",
     gitLink: "https://github.com/peacebonez/facetune-fails",
     largeImg: "https://i.imgur.com/ZeLmkPD.gif",
     smallImg: "https://i.imgur.com/ZeLmkPD.gif",
+  },
+  {
+    name: "Food Finder",
+    link: "https://food-finder-app.netlify.app/",
+    gitLink: "https://github.com/peacebonez/recipe-app",
+    largeImg: "https://i.imgur.com/BbZJX4h.png",
+    smallImg: "https://i.imgur.com/6YQr8ge.jpg",
   },
   {
     name: "npm react-blend-buttons",
@@ -25,25 +32,18 @@ const projects = [
     smallImg: "https://media.giphy.com/media/sdb95iGCQ4Kk6nHdDl/giphy.gif",
   },
   {
-    name: "Recipe Finder",
-    link: "https://food-finder-app.netlify.app/",
-    gitLink: "https://github.com/peacebonez/recipe-app",
-    largeImg: "https://i.imgur.com/BbZJX4h.png",
-    smallImg: "https://i.imgur.com/6YQr8ge.jpg",
-  },
-  {
-    name: "Sip Coffee House",
-    link: "https://competent-colden-44dbfd.netlify.app/",
-    gitLink: "https://github.com/peacebonez/sip-website",
-    largeImg: "https://i.imgur.com/BdbjkZY.gif",
-    smallImg: "https://i.imgur.com/BdbjkZY.gif",
-  },
-  {
     name: "e-Enroll Web Scraper",
     link: "https://dry-gorge-55629.herokuapp.com/",
     gitLink: "https://github.com/peacebonez/e-course-scraper",
     largeImg: "https://media.giphy.com/media/FaAKLOXTsvYAADkiqc/giphy.gif",
     smallImg: "https://media.giphy.com/media/FaAKLOXTsvYAADkiqc/giphy.gif",
+  },
+  {
+    name: "Sip Coffee House Website",
+    link: "https://competent-colden-44dbfd.netlify.app/",
+    gitLink: "https://github.com/peacebonez/sip-website",
+    largeImg: "https://i.imgur.com/BdbjkZY.gif",
+    smallImg: "https://i.imgur.com/BdbjkZY.gif",
   },
 ];
 let id = 0;

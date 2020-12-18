@@ -33,7 +33,11 @@ export default function Footer() {
           ></img>
         </div>
         <div className="resume-box">
-          <a href="https://docs.google.com/document/d/1r_nwNXq3zfGhQz_Kwu3cScxJA2F7XdwDovS49DHvKN8/edit?usp=sharing">
+          <a
+            href="https://docs.google.com/document/d/1r_nwNXq3zfGhQz_Kwu3cScxJA2F7XdwDovS49DHvKN8/edit?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <button id="resume">
               <FaFile />
               Resumé
